@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc -p ./",
+    "heroku-postbuild": "tsc -p ./",
     "start": "node ./build/src/index.js"
   },
   "dependencies": {
