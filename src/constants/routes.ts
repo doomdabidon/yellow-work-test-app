@@ -1,0 +1,10 @@
+export const API = '/api';
+export const AUTH = '/auth';
+export const LOGIN = `${AUTH}/login`;
+export const REGISTER = `${AUTH}/register`;
+export const RUN = '/runs';
+export const RUN_ID = `${RUN}/:id`;
+export const RUN_REPORT = `${RUN}/report`;
+export const PUBLIC = '/public';
+export const SWAGGER = `${PUBLIC}/swagger`;
+export const PHOTOS = '/photos';
