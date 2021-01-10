@@ -24,8 +24,6 @@ export const login = async (email: string, password: string): Promise<{ user: Us
     }
 
     const token = createJWT(user.id);
-    console.log('users', users);
-
     return { user: { email: user.email, id: user.id }, token };
 };
 
@@ -44,7 +42,5 @@ export const register = async (email: string, password: string): Promise<{ user:
     users.push(newUser);
 
     const token = createJWT(id);
-    console.log('users', users);
-
     return { user: { email: newUser.email, id: newUser.id }, token };
 };

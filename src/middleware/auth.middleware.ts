@@ -19,7 +19,6 @@ export default (req: Request, res: Response, next: NextFunction) => {
     try {
         const token = extractToken(req);
         const decodedToken: { userId: string } = decodeJWT(token as string);
-        console.log('decodedToken', decodedToken)
         const userId = decodedToken.userId;
         if (userId === undefined) {
           throw 'Invalid user ID';
