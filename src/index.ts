@@ -5,7 +5,7 @@ import { PUBLIC, API } from './constants/routes';
 import routers from './routes';
 
 const app = express();
-const PORT = 8888;
+const PORT = 32342;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
