@@ -6,5 +6,5 @@ export const RUN = '/runs';
 export const RUN_ID = `${RUN}/:id`;
 export const RUN_REPORT = `${RUN}/report`;
 export const PUBLIC = '/public';
-export const SWAGGER = `${PUBLIC}/swagger`;
+export const SWAGGER = `/swagger`;
 export const PHOTOS = '/photos';
