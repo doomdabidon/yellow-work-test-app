@@ -10,7 +10,7 @@ const runs: RunWithUser[] = [{
     date: new Date()
 }];
 
-export const saveRun = (run: IRun, userId: number): IRun => {
+export const saveRun = (run: IRun, userId: number): RunWithUser => {
 
     const runWithUser = {
         id,
@@ -20,7 +20,7 @@ export const saveRun = (run: IRun, userId: number): IRun => {
 
     id += 1;
     runs.push(runWithUser);
-    return run;
+    return runWithUser;
 };
 
 export const getRun = (id: number, userId: number): RunWithUser | void => runs.find((run) => run.id === id && run.userId === userId);

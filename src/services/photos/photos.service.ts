@@ -1,10 +1,10 @@
-import { IInage } from '../../interfaces/image';
+import { IImage } from '../../interfaces/image';
 import { APIUrl } from '../../constants/config';
 
 export let id = 0;
-export const uploads: IInage[] = [];
+export const uploads: IImage[] = [];
 
-export const uploadPhotos = (documents: Express.Multer.File[]): IInage[] => {
+export const uploadPhotos = (documents: Express.Multer.File[]): IImage[] => {
 
     documents.forEach(({ filename, path }) => uploads.push({
         name: filename,
@@ -14,4 +14,4 @@ export const uploadPhotos = (documents: Express.Multer.File[]): IInage[] => {
 
     return uploads;
 };
-export const getPhotos = (): IInage[] => { return uploads };
+export const getPhotos = (): IImage[] => { return uploads };
